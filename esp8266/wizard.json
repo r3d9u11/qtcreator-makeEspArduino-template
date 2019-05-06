@@ -97,7 +97,7 @@
 					"data":
 					{
 						"items":
-						[ 
+						[
 							{"trKey": "Generic ESP8266 Module", "value": "generic" },
 							{ "trKey": "Generic ESP8285 Module", "value": "esp8285" },
 							{ "trKey": "ESPDuino (ESP-13 Module)", "value": "espduino" },
@@ -143,7 +143,6 @@
 				},
 				{
 					"name": "serial_monitor_program",
-				{
 					"name": "port",
 					"trDisplayName": "Port:",
 					"mandatory": true,
@@ -227,9 +226,9 @@
 					"source": "project.config",
 					"target": "%{JS: Util.fileName('%{ProjectDirectory}/%{ProjectName}', 'config')}"
 				},
-				{ 
-					"source": "project.creator.shared", 
-					"target": "%{JS: Util.fileName('%{ProjectDirectory}/%{ProjectName}', 'creator.shared')}" 
+				{
+					"source": "project.creator.shared",
+					"target": "%{JS: Util.fileName('%{ProjectDirectory}/%{ProjectName}', 'creator.shared')}"
 				},
 				{
 					"source": "project.files",
@@ -243,10 +242,10 @@
 					"source": "src",
 					"target": "%{ProjectDirectory}"
 				},
-				{ 
-					"source": "git.ignore", 
-					"target": ".gitignore", 
-					"condition": "%{JS: ! %{IsSubproject} && '%{VersionControl}' === 'G.Git'}" 
+				{
+					"source": "git.ignore",
+					"target": ".gitignore",
+					"condition": "%{JS: ! %{IsSubproject} && '%{VersionControl}' === 'G.Git'}"
 				}
 			]
 		}
