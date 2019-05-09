@@ -142,22 +142,11 @@
 					}
 				},
 				{
-					"name": "serial_monitor_program",
 					"name": "port",
 					"trDisplayName": "Port:",
 					"mandatory": true,
 					"type": "LineEdit",
 					"data":{"trText": "%{DEFAULT_PORT}"}
-				},
-				{
-					"name": "port_speed",
-					"trDisplayName": "Serial port baudrate:",
-					"mandatory": true,
-					"type": "LineEdit",
-					"data":{
-						"validator": "^[^\"]+$",
-						"trText": "%{DEFAULT_PORT_SPEED}"
-					}
 				},
 				{
 					"name": "serial_monitor_program",
